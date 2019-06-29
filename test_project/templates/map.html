@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>  
+    <title>Project - Global Warning</title>
+
+     <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+  <!--D3 cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+  </head>
+<body style="overflow-y: hidden   ">
+    <!-- Image and text -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="../static/media/globe.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+        Project-Global Warning
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+   
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="./comparison.html">Comparison</a>
+          <a class="nav-item nav-link" href="./data.html">Data</a>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./plot1.html">Max Temperature</a>
+                <a class="dropdown-item" href="./plot2.html">Humidity</a>
+                <a class="dropdown-item" href="./plot3.html">Cloudiness</a>
+                <a class="dropdown-item" href="./plot4.html">Wind-Speed</a>
+              </div>
+            </li>
+        </div>
+      </div> 
+      <div style="float: right">
+          <div ><a class="nextPage" href="index.html"> <i class="fa fa-2x fa-angle-double-left"></i></a>
+                <a class="nextPage" href="#"> <i class="fa fa-2x fa-angle-double-right"></i></a>
+          </div>
+      </div>
+  </nav>
+  
+  <header>
+    <div id=map></div>
+    </div>
+  </header>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Copyright coding bootcamp 2019</span>
+    </div>
+  </footer>
+    <!-- API key -->
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <!-- Our JS -->
+    <script type="text/javascript" src="../static/js/logic.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
